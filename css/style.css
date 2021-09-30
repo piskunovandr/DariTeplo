@@ -64,6 +64,8 @@ header {
   top: 0;
   right: 0;
   width: 965px;
+  max-width: 965px;
+  min-width: 900px;
   height: 435px;
   background-color: #9AAA93;
 }
@@ -89,11 +91,63 @@ header {
   font-size: 22px;
   margin-right: 147px;
 }
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-info {
+  min-width: 427px;
+}
+.main-subtitle {
+  font-family: 'Kudryashev Display', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 107px;
+}
+.main-title {
+  font-family: 'Kudryashev Display', sans-serif;
+  letter-spacing: 5px;
+  font-size: 120px;
+  margin: 0;
+}
+.main-text {
+  font-family: 'Kudryashev Display', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  margin-top: 29px;
+}
+.main-button {
+  font-family: 'Monesta', sans-serif;
+  border-style: none;
+  background-color: #9AAA93;
+  height: 49px;
+  width: 223px;
+  font-size: 22px;
+  margin-top: 44px;
+  border-radius: 30.5px 0 30.5px 0;
+  cursor: pointer;
+}
+.main-slider {
+  position: relative;
+}
+.slider-text {
+  font-family: 'Kudryashev Display';
+  position: absolute;
+  top: 35%;
+  left: 33px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 120px;
+  color: #fff;
+  letter-spacing: 8px;
+}
 @font-face {
   font-family: 'Kudryashev Display';
   src: url('../fonts/KudryashevDisplay-Sans.eot');
   src: url('../fonts/KudryashevDisplay-Sans.eot?#iefix') format('embedded-opentype'), url('../fonts/KudryashevDisplay-Sans.woff2') format('woff2'), url('../fonts/KudryashevDisplay-Sans.woff') format('woff'), url('../fonts/KudryashevDisplay-Sans.ttf') format('truetype'), url('../fonts/KudryashevDisplay-Sans.svg#KudryashevDisplay-Sans') format('svg');
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
