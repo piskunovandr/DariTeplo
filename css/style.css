@@ -64,7 +64,7 @@ header {
   top: 0;
   right: 0;
   width: 965px;
-  max-width: 965px;
+  max-width: 950px;
   min-width: 900px;
   height: 435px;
   background-color: #9AAA93;
@@ -143,6 +143,68 @@ header {
   color: #fff;
   letter-spacing: 8px;
 }
+.new-products-title {
+  font-family: 'Kudryashev Display';
+  font-size: 50px;
+  text-align: center;
+  margin-top: 120px;
+  letter-spacing: 5px;
+}
+.new-product-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.product-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.25);
+}
+.product-text-block {
+  background-color: #CCC4B8;
+}
+.product-text-name {
+  margin: 14px 0px 15px 14px;
+  font-family: 'Monesta';
+  font-size: 22px;
+}
+.product-slide {
+  width: 265px;
+}
+.product-text-block {
+  border-radius: 0px 0px 10px 10px;
+}
+.product-price {
+  font-family: 'Monesta';
+  font-size: 20px;
+  margin-left: 14px;
+  margin-bottom: 24px;
+  display: block;
+}
+.product-button {
+  border-style: none;
+  margin-left: 14px;
+  width: 90%;
+  height: 25px;
+  width: 225px;
+  margin-bottom: 10px;
+  font-family: 'Monesta';
+  font-size: 20px;
+}
 @font-face {
   font-family: 'Kudryashev Display';
   src: url('../fonts/KudryashevDisplay-Sans.eot');
@@ -156,6 +218,14 @@ header {
   src: url('../fonts/Monesta-LightDEMO.eot');
   src: url('../fonts/Monesta-LightDEMO.eot?#iefix') format('embedded-opentype'), url('../fonts/Monesta-LightDEMO.woff2') format('woff2'), url('../fonts/Monesta-LightDEMO.woff') format('woff'), url('../fonts/Monesta-LightDEMO.ttf') format('truetype'), url('../fonts/Monesta-LightDEMO.svg#Monesta-LightDEMO') format('svg');
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kudryashev Headline';
+  src: url('../fonts/KudryashevHeadline-Sans.eot');
+  src: url('../fonts/KudryashevHeadline-Sans.eot?#iefix') format('embedded-opentype'), url('../fonts/KudryashevHeadline-Sans.woff2') format('woff2'), url('../fonts/KudryashevHeadline-Sans.woff') format('woff'), url('../fonts/KudryashevHeadline-Sans.ttf') format('truetype'), url('../fonts/KudryashevHeadline-Sans.svg#KudryashevHeadline-Sans') format('svg');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
