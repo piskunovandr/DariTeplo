@@ -135,7 +135,7 @@ header {
 .slider-text {
   font-family: 'Kudryashev Display';
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 33px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -180,6 +180,9 @@ header {
   -webkit-box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+}
+.product-img {
+  height: 285px;
 }
 .product-text-block {
   background-color: #CCC4B8;
@@ -238,16 +241,13 @@ header {
   width: 15px;
   height: 16px;
 }
-.slick-dotted.slick-slider {
-  margin-bottom: 0;
-}
 .cardd {
   border: none;
   margin-left: 20px;
   margin-top: 50px;
 }
 .cardd .card-body {
-  margin-top: -30px;
+  margin-top: 0px;
 }
 .cardd .card-body .card-title {
   font-family: 'Monesta';
@@ -278,6 +278,7 @@ header {
 .cardd .your-class {
   -webkit-filter: drop-shadow(5px 10px 30px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(5px 10px 30px rgba(0, 0, 0, 0.25));
+  height: 465px;
 }
 .cardd .your-class img {
   width: 22rem;
@@ -773,25 +774,6 @@ footer {
   width: 100%;
   height: 1px;
   background-color: #000;
-}
-html,
-body {
-  height: 100%;
-}
-.wrapper {
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.main-wrap {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 @font-face {
   font-family: 'Kudryashev Display';
