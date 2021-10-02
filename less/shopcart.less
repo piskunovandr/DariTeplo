@@ -1,0 +1,131 @@
+
+.shop-cart{
+   .shop-cart-header{
+      h3{
+         font-family: 'Kudryashev Display';
+         color: black;
+         font-size: 50px;
+      }
+   }
+}
+
+table {
+   width:100%;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+   border-collapse: collapse;
+   color: #686461;
+ }
+ th {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   padding: 10px;
+   text-align: left;
+   width: 16%;
+
+ }
+ th.namer{
+    width: 52%;
+ }
+
+ td {
+   padding: 30px 0px;
+ }
+ tr{
+    padding: 0px 0px;
+   background: white;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+ }
+
+ .name{
+    display: flex;
+    .name-img{
+       margin-right: 20px;
+       img{
+          height: 158px;
+       }
+    }
+    .name-info{
+       .name-info-header{
+          h3{
+             font-family: 'Monesta';
+             font-size: 25px;
+             color:black;
+             margin-top: 0px;
+          }
+       }
+    }
+    .name-info-body{
+       p{
+         font-family: 'Monesta';
+         font-size: 18px;
+         color: rgba(0, 0, 0, 0.7);
+         margin-top: 0px;
+       }
+    }
+ }
+
+
+ .number {
+	user-select: none;
+	position: relative;
+	text-align: left;
+	padding: 0;
+	width: 140px;
+	border: 1px solid #ddd;
+	display: inline-block;
+}
+.number-minus, .number-plus {
+	position: absolute;
+	top: 0;
+	width: 40px;
+	height: 32px;
+	line-height: 32px;
+	display: block;
+	background: white;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+   border: none;
+   cursor: pointer;
+}
+.number-minus {
+	left: 0;
+	
+}
+.number-plus {
+	right: 0;
+	
+}
+.number-minus:hover, .number-plus:hover {
+	background: #fffcfb;
+}
+.number-minus:active, .number-plus:active {
+	background: #e8e4e2;
+}
+.number-text{
+	display: inline-block;
+	font-size: 14px;
+	color: #000;
+	line-height: 32px;
+	height: 32px;
+	padding: 0;
+	margin: 0 0 0 42px;
+	background: #fff;
+	outline: none;
+	border: none;
+	width: 57px;
+	text-align: center;
+}
+
+.last{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   .last-buttons{
+      display: flex;
+      flex-direction: row;
+   
+   }
+}

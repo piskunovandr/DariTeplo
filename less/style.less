@@ -1,8 +1,16 @@
 @import url("header.less");
 @import url("main-block.less");
 @import url("new-products.less");
-@import url("sales.less");
+@import url("card-prodact.less");
+@import url("catalog.less");
+@import url("exchange-refund.less");
+@import url("delivery.less");
+@import url("buy.less");
+@import url("discount.less");
+@import url("about.less");
+@import url("shopcart.less");
 @import url("footer.less");
+@import url("sales.less");
 
 // ОСНОВНЫЕ ЦВЕТА
 
@@ -12,6 +20,27 @@
 @black: #000000;
 
 // ОСНОВНЫЕ ЦВЕТА
+
+// Прибиваем футер вниз
+
+html, body
+{
+    height: 100%;
+}
+
+.wrapper
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrap
+{
+    flex: 1 1 auto;
+}
+
+// Прибиваем футер вниз
 
 @font-face {
     font-family: 'Kudryashev Display';
