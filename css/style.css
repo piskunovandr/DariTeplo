@@ -128,6 +128,36 @@ header {
   margin-top: 44px;
   border-radius: 30.5px 0 30.5px 0;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.main-button:after {
+  content: "";
+  height: 200%;
+  left: -230%;
+  opacity: 0;
+  position: absolute;
+  top: -20%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  width: 200%;
+  background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.13)), color-stop(77%, rgba(255, 255, 255, 0.13)), color-stop(92%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+}
+.main-button:hover:after {
+  left: 100%;
+  opacity: 1;
+  top: 100%;
+  -webkit-transition-duration: 0.7s, 1s, 0.15s;
+          transition-duration: 0.7s, 1s, 0.15s;
+  -webkit-transition-property: left, top, opacity;
+  transition-property: left, top, opacity;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+.main-button:active:after {
+  opacity: 0;
 }
 .main-slider {
   position: relative;
@@ -346,6 +376,9 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.exchange-refund {
+  margin-bottom: 50px;
+}
 .exchange-refund .exchange-refund-header h2 {
   font-family: 'Kudryashev Display';
   color: black;
@@ -355,6 +388,9 @@ header {
   font-family: 'Monesta';
   color: black;
   font-size: 20px;
+}
+.delivery {
+  margin-bottom: 50px;
 }
 .delivery .delivery-header h2 {
   font-family: 'Kudryashev Display';
@@ -387,6 +423,7 @@ header {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  margin-bottom: 70px;
 }
 .discount .discount-content {
   width: 100%;
@@ -415,6 +452,9 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.about {
+  margin-bottom: 60px;
+}
 .about .about-header h2 {
   font-family: 'Kudryashev Display';
   color: black;
@@ -432,6 +472,9 @@ header {
 }
 .about .about-body .about-body-instagram .about-body-instagram-body .about-body-instagram-body-slider .item img {
   width: 250px;
+}
+.shop-cart {
+  margin-bottom: 80px;
 }
 .shop-cart .shop-cart-header h3 {
   font-family: 'Kudryashev Display';

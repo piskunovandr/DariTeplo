@@ -61,4 +61,13 @@ $(document).ready(function () {
       }
       $input.val(val);
    });
+
+   let inpt = document.querySelector('#name');
+   let label = document.querySelector('label[for="name"]');
+   inpt.addEventListener('focus', () => {
+     label.style.visibility = 'hidden';
+   });
+   inpt.addEventListener('blur', () => {
+     label.style.visibility = 'visible';
+   });
 });
